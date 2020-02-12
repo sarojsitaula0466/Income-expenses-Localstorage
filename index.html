@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h2>Account balance</h2>
+      </div>
+      <div class="body-wrapper">
+        <div class="inputs">
+          <div><input class="description" /></div>
+          <div><input placeholder="Amount" class="Amount" /></div>
+          <div>
+            <select class="incomeorexpenses"
+              ><option>--select--</option
+              ><option>Income</option>
+              <option>Expenses</option>
+            </select>
+          </div>
+          <div><button class="add-button">Add</button></div>
+        </div>
+        <div class="income-expense">
+          <div>
+            <h3>Income</h3>
+            <ul class="income-list"></ul>
+          </div>
+          <div>
+            <h3>Expense</h3>
+            <ul class="expenses-list"></ul>
+          </div>
+        </div>
+        <div class="calculator">
+          <div><h3>Balance</h3></div>
+          <div class="calculated-amount"></div>
+        </div>
+        <div class="clear-localstorage"><button>clear</button></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
